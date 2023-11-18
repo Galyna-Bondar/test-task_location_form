@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.min.css">
+    <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAljNcxCxOiOK5SU3ji-4i5WJOlv0LXZqk&libraries=places"
+    async defer></script> -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("hEfDSTUUcK_97r0zy");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="first_block">
+                <a href="#">
+                    <h3>УКРПЕК</h3>
+                    <img src="./assets/images/Logo-min-removebg-preview.png" alt="#" class="logo logo_1">
+                </a>
+            </div>
+ <h2>ЗАПОВНЕНИЙ <br> КОНТЕЙНЕР?</h2>
+            <div class="logo_wrapper">
+                <img src="./assets/images/Logo-min-removebg-preview.png" alt="#" class="logo logo_2">
+            </div>
+                <div class="form_wrapper">
+                    <form action="#" id="form" class="form">
+                        <div class="form_item city_placeholder">
+                            <span class="icon">
+                                <svg width="20px" height="20px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M16,31C7.729,31,1,24.271,1,16S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z M16,2C8.28,2,2,8.28,2,16      s6.28,14,14,14s14-6.28,14-14S23.72,2,16,2z" fill="#fff"/>
+                                <path d="M23.64,20.713l-4.762-1.652l-0.323-2.584c-0.215,0.307-0.523,0.546-0.924,0.671l0.293,2.345         c0.023,0.189,0.152,0.349,0.332,0.41l5.055,1.756c0.9,0.314,1.689,1.427,1.689,2.381v-0.007c0,0.276,0.224,0.5,0.5,0.5         c0.275,0,0.499-0.223,0.5-0.498C25.997,22.656,24.94,21.168,23.64,20.713z" fill="#fff"/>
+                                <path d="M6.5,24.532c-0.276,0-0.5-0.224-0.5-0.5v0.007c0-1.379,1.059-2.871,2.359-3.326l4.762-1.641         l0.012-0.28c0.034-0.274,0.289-0.465,0.559-0.434c0.273,0.034,0.468,0.284,0.434,0.559l-0.051,0.589         c-0.023,0.189-0.153,0.348-0.333,0.41l-5.054,1.742C7.789,21.973,7,23.086,7,24.039v-0.007C7,24.309,6.776,24.532,6.5,24.532  z" fill="#fff"/>
+                                <path d="M16,18.039c-2.779,0-4.192-1.844-4.201-6.469c-0.002-1.174,0.123-2.363,1.227-3.469          C13.729,7.396,14.729,7.039,16,7.039s2.271,0.357,2.975,1.063c1.104,1.105,1.229,2.295,1.227,3.469          C20.192,16.195,18.779,18.039,16,18.039z M16,8.039c-1.009,0-1.75,0.252-2.267,0.769c-0.632,0.633-0.938,1.2-0.935,2.761          c0.008,4.018,1.055,5.471,3.201,5.471s3.193-1.453,3.201-5.471c0.003-1.561-0.303-2.128-0.935-2.761  C17.75,8.291,17.009,8.039,16,8.039z" fill="#fff"/>
+                                </svg>
+                            </span>
+                            <input id="city" type="text" name="city" class="input_city req" placeholder="МІСТО" required maxlength="20" minlength="2">
+                            <span class="error_placeholder" style="position:absolute; left:110%; top: 25%; color: black; border-radius: 20px; padding: 10px 15px; text-align: center;  font-style:italic; width:80%;"></span>
+                            </div>
+                            <div class="form_item"><input id="address" type="text" name="address" class="input_address req" placeholder="АДРЕСА" required maxlength="50" minlength="5"></div>
+                            <button onclick="SendMail()" type="submit" class="btn">Повідомити</button>
+                    </form>
+                    <p>Дякуємо за чисте місто! </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
